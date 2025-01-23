@@ -1,4 +1,3 @@
-// app/layout.tsx
 export const metadata = {
   title: 'チャットアプリ',
   description: 'Next.js + Supabaseで作るリアルタイムチャット',

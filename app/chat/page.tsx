@@ -1,8 +1,8 @@
-// app/chat/page.tsx
 "use client"
 
 import { useEffect, useState } from "react"
 import { supabase } from "@/lib/supabaseClient"
+import Link from "next/link"
 
 type Message = {
     id: string
@@ -75,6 +75,15 @@ export default function ChatPage() {
 
     return (
         <div style={{ maxWidth: "600px", margin: "0 auto", padding: "1rem" }}>
+
+            <div>
+                <Link href="/">
+                    <button style={{ marginTop: '1rem', padding: '0.5rem 1rem' }}>
+                        HOME
+                    </button>
+                </Link>
+            </div>
+
             <h1 style={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
                 チャットタイムライン
             </h1>
